@@ -1,7 +1,7 @@
 version: '3'
 
 networks:
-  rustdesk-net:
+  remotend-net:
     external: false
 
 services:
@@ -17,7 +17,7 @@ services:
     volumes:
       - ./data:/root
     networks:
-      - rustdesk-net
+      - remotend-net
     depends_on:
       - hbbr
     restart: unless-stopped
@@ -32,5 +32,5 @@ services:
     volumes:
       - ./data:/root
     networks:
-      - rustdesk-net
+      - remotend-net
     restart: unless-stopped
