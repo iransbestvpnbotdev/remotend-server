@@ -81,7 +81,7 @@ pub const RENDEZVOUS_SERVERS: &[&str] = &[
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
-    _ => "",
+    _ => "BI0L+9eJMNobx89iYDUh27IRluerQwim914TNszm7hg=",
 };
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
