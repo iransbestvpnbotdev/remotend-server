@@ -65,8 +65,8 @@ lazy_static::lazy_static! {
 // #[cfg(any(target_os = "android", target_os = "ios"))]
 lazy_static::lazy_static! {
     pub static ref HELPER_URL: HashMap<&'static str, &'static str> = HashMap::from([
-        ("remotend docs home", "https://jobbusy.com/docs/en/"),
-        ("remotend docs x11-required", "https://jobbusy.com/docs/en/manual/linux/#x11-required"),
+        ("remotend docs home", "https://jobbusy.xyz/docs/en/"),
+        ("remotend docs x11-required", "https://jobbusy.xyz/docs/en/manual/linux/#x11-required"),
         ]);
 }
 
@@ -76,7 +76,7 @@ const CHARS: &[char] = &[
 ];
 
 pub const RENDEZVOUS_SERVERS: &[&str] = &[
-    "remotend.jobbusy.com",
+    "remotend.jobbusy.xyz",
    ];
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
