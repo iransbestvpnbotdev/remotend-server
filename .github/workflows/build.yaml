@@ -64,7 +64,7 @@ jobs:
           path: |
             target/${{ matrix.job.target }}/release/hbbr
             target/${{ matrix.job.target }}/release/hbbs
-            target/${{ matrix.job.target }}/release/remotend-utils
+            target/${{ matrix.job.target }}/release/rustdesk-utils
           if-no-files-found: error
 
   build-win:
@@ -152,7 +152,7 @@ jobs:
           path: |
             ui\SignOutput\hbbr.exe
             ui\SignOutput\hbbs.exe
-            ui\SignOutput\remotend-utils.exe
+            ui\SignOutput\rustdesk-utils.exe
             ui\SignOutput\remotendServer.Setup.exe
           if-no-files-found: error
 
@@ -190,13 +190,13 @@ jobs:
         run: |
           sudo apt update
           DEBIAN_FRONTEND=noninteractive sudo apt install -y zip
-          zip ${{ matrix.job.name }}/remotend-server-${{ matrix.job.os }}-${{ matrix.job.name }}.zip ${{ matrix.job.name }}/*
+          zip ${{ matrix.job.name }}/rustdesk-server-${{ matrix.job.os }}-${{ matrix.job.name }}.zip ${{ matrix.job.name }}/*
 
       - name: Create Release (${{ matrix.job.os }} - (${{ matrix.job.name }})
         uses: softprops/action-gh-release@v1
         with:
           draft: true
-          files: ${{ matrix.job.name }}/remotend-server-${{ matrix.job.os }}-${{ matrix.job.name }}.zip
+          files: ${{ matrix.job.name }}/rustdesk-server-${{ matrix.job.os }}-${{ matrix.job.name }}.zip
             
   # docker build and push of single-arch images
   docker:
@@ -484,6 +484,6 @@ jobs:
         with:
           draft: true
           files: |
-            debian-build/remotend-server-hbbr_*_${{ matrix.job.debian_platform }}.deb
-            debian-build/remotend-server-hbbs_*_${{ matrix.job.debian_platform }}.deb
-            debian-build/remotend-server-utils_*_${{ matrix.job.debian_platform }}.deb
+            debian-build/rustdesk-server-hbbr_*_${{ matrix.job.debian_platform }}.deb
+            debian-build/rustdesk-server-hbbs_*_${{ matrix.job.debian_platform }}.deb
+            debian-build/rustdesk-server-utils_*_${{ matrix.job.debian_platform }}.deb
