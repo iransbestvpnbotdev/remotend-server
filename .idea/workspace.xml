@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e4c3c7b-9a1c-4d9f-ac70-b5a872d98a3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/hbb_common/src/config.rs" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hbb_common/src/config.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707934179962</updated>
       <workItem from="1707934181499" duration="2986000" />
-      <workItem from="1707955344605" duration="112000" />
+      <workItem from="1707955344605" duration="1120000" />
     </task>
     <servers />
   </component>
